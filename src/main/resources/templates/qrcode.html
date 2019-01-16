@@ -1,0 +1,39 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>SimpleShop-官网</title>
+		<style script="text/css">
+		</style>
+	</head>
+	<body>
+	<div th:if="${res.success}">
+		<div style="text-align:center;" >请用微信扫码支付</div>
+		<div style="text-align:center;">
+			<img alt="支付二维码" src="qrcode?r=" th:src="'qrcode?' + ${r}" style="witdh:300px;height:300px;">
+		</div>
+		<div>
+			
+		</div>
+	</div>
+	<div>
+		<div style="text-align:center; color:red; font-size:20px;" th:text="${res.message}">信息提示</div>
+	</div>
+	<!-- <script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var orderId = '';
+		
+		layui.use(['jquery'], function() {
+			var $ = layui.$;
+			
+			setInterval(function() {
+				
+				$.post("queryOrderPayStatus", {orderId:orderId}, function(res) {
+					if(res.success && 
+							res.data) {
+						parent.location.reload();
+					}
+				});
+			}, 2000);	
+		});
+	</script> -->
+	</body>
+</html>

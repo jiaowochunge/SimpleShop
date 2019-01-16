@@ -1,0 +1,68 @@
+/* 紧凑的卡片 */
+.t100-compact-card {
+	font-size: 12px;
+}
+.t100-compact-card .layui-card-header {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.t100-compact-card .layui-card-header .t100-searchbar {
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+.t100-compact-card .layui-card-header .t100-searchbar .layui-inline {
+	margin-bottom: 0px;
+}
+.t100-compact-card .layui-card-header .t100-searchbar .layui-form-label {
+	width: auto;
+}
+.t100-compact-card .layui-card-header .t100-searchbar .layui-input-block {
+	margin-left: 0px;
+	float: left;
+	min-height: auto;
+}
+.t100-compact-card .layui-card-header .t100-searchbar .layui-input {
+	height: 30px;
+}
+.t100-compact-card .layui-card-header .t100-searchbar .layui-form-mid {
+	padding: 0px! important;
+	padding-top: 4px !important;
+}
+
+/* 动作栏，与搜索栏搭配使用 */
+.t100-actionbar {
+	text-align: right;
+}
+.t100-actionbar .layui-form-item {
+	margin-bottom: 0px;
+}
+
+/* 修正 layui-card-header 中的复选框显示不正常的bug */
+.layui-card-header .layui-form-checkbox .layui-icon {
+	right: 0px;
+	top: 0px;
+	margin-top: 0px;
+}
+
+/* 紧凑的搜索栏. 废弃 */
+.t100-compact-searchbar {
+	margin-bottom: 0px ;
+}
+.t100-compact-searchbar .layui-form-label {
+	width: auto;
+}
+.t100-compact-searchbar .layui-input-block {
+	margin-left: 0px;
+	float: left;
+}
+
+/* 添加星号标记 */
+.layui-form-item .layui-form-label.required:before {
+    content: "*";
+    color: #ff4949;
+    margin-right: 4px;
+}
+
+/* input[readonly] {
+	color: #b2b2b2;
+} */
