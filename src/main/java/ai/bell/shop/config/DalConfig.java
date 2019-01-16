@@ -21,12 +21,6 @@ public class DalConfig {
 		return DruidDataSourceBuilder.create().build();
 	}
 
-	//	@Bean
-	//	public PlatformTransactionManager transactionManager(DataSource dataSource) {
-	//		PlatformTransactionManager txManager = new DataSourceTransactionManager(dataSource);
-	//		return txManager;
-	//	}
-
 	@Bean
 	public SqlKitHolder sqlKitHolder() {
 		return new SqlKitHolder();
